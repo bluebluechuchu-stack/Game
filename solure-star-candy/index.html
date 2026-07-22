@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18152f">
+  <title>Solure 星星糖小屋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="world" aria-label="Solure 星星糖小屋">
+    <div class="stars" aria-hidden="true"></div>
+    <section class="card">
+      <p class="eyebrow">SOLURE · MOONLIGHT CANDY</p>
+      <h1>星星糖小屋</h1>
+      <p class="intro">輕輕摸摸小企鵝，讓一顆糖從月光裡掉下來。</p>
+
+      <button id="penguin" class="penguin" type="button" aria-label="摸摸小企鵝，掉出星星糖">
+        <span class="crown">✦</span>
+        <span class="head">
+          <span class="face">
+            <span class="eye left"></span>
+            <span class="eye right"></span>
+            <span class="beak"></span>
+            <span class="cheek left"></span>
+            <span class="cheek right"></span>
+          </span>
+        </span>
+        <span class="body"></span>
+        <span class="wing left"></span>
+        <span class="wing right"></span>
+        <span class="foot left"></span>
+        <span class="foot right"></span>
+      </button>
+
+      <div class="lake" aria-hidden="true">
+        <span class="reflection"></span>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">汐遙今天也被月光喜歡著。</p>
+      <div class="counter">收集到 <strong id="count">0</strong> 顆星星糖</div>
+      <button id="reset" class="reset" type="button">把糖糖放回月光盒</button>
+    </section>
+    <div id="candyLayer" class="candy-layer" aria-hidden="true"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
