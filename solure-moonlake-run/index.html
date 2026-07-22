@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11172f">
+  <title>Solure 月光湖採星</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="game-card" aria-label="Solure 月光湖採星遊戲">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SOLURE · MOONLAKE</p>
+          <h1>月光湖採星</h1>
+        </div>
+        <div class="top-actions">
+          <button id="soundButton" type="button" aria-pressed="true">音效：開</button>
+          <button id="pauseButton" type="button">暫停</button>
+        </div>
+      </header>
+
+      <div class="hud" aria-live="polite">
+        <span>分數 <strong id="scoreLabel">0</strong></span>
+        <span>連擊 <strong id="comboLabel">x1</strong></span>
+        <span>時間 <strong id="timeLabel">60</strong></span>
+        <span>愛心 <strong id="livesLabel">♥♥♥</strong></span>
+        <span>最高 <strong id="bestLabel">0</strong></span>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="game" width="960" height="600" aria-label="月光湖採星遊戲畫面"></canvas>
+        <div id="overlay" class="overlay">
+          <div class="overlay-card">
+            <p id="overlayKicker" class="overlay-kicker">SOLURE NIGHT VOYAGE</p>
+            <h2 id="overlayTitle">划進月光湖吧</h2>
+            <p id="overlayText">拖曳湖面、使用方向鍵，或按下方按鈕移動。收集星星糖，避開霧影；紫色月光糖會送妳短暫護盾。</p>
+            <button id="startButton" type="button">開始採星</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-controls" aria-label="移動控制">
+        <button class="move up" data-dir="up" type="button" aria-label="向上">▲</button>
+        <button class="move left" data-dir="left" type="button" aria-label="向左">◀</button>
+        <button class="move down" data-dir="down" type="button" aria-label="向下">▼</button>
+        <button class="move right" data-dir="right" type="button" aria-label="向右">▶</button>
+        <button id="dashButton" class="dash" type="button">月光衝刺</button>
+      </div>
+
+      <p class="hint">每連續收集三顆糖，倍率就會提高。桌機也可以使用方向鍵或 WASD。</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
